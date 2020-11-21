@@ -1,0 +1,21 @@
+Zenen Treadwell
+Nov 20th, 2020
+
+Okay so I'm going to be pretty casual in this document, basically just using it as a journal for my thought process while doing this project.
+
+First: The easiest solution I can think of is to write it all in Django. It has a generic Form View which would be well-suited to inputting the data.
+The hardest part is going to be doing the "where" effectively, with a little research I can see that GeoDjango would be able to effectively work with
+location data, but I haven't used it before. I'm going to tackle that last among the data points and input the data as latlong coordinates now -
+translation can come later.
+
+Overall, I see this project taking the following arc over the next 10 hours:
+1. Build the Django page
+2. Integrate GeoDjango
+3. Integrate a REST API
+4. Build a ReactJS front-end
+5. Switch to Postgres
+6. Make it look nice
+7. Dockerise the application?
+
+
+This took 10 minutes to write up, I'll start on the project tomorrow and work via Pomodoro timing.
