@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>DucknRoll - List of Entries</title>
+    </head>
+    <body>
+        <ul> 
+            {% for object in object_list %} 
+            <div class="entry">
+                <h1>Duck Dataset #{{ object.pk }}</h1>
+                <p>This flock consisted of {{ object.flockSize }} ducks. They were fed {{ object.feedAmt }} grams of {{ object.feedType }} at 
+                {{ object.feedTime.time }} on {{ object.feedTime.date }}. The location is recorded as: {{ object.feedLoc }}</p>
+            </div>
+            <hr/> 
+            {% empty %} 
+            <li>No objects yet.</li> 
+            {% endfor %} 
+        </ul> 
+    </body>
+</html>

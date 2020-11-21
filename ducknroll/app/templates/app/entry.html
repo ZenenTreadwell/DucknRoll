@@ -1,0 +1,12 @@
+<!doctype html>
+
+<html>
+    <head>
+        {{ form.media }}
+    </head>
+    <body>
+        <form action="/api/" method="post">
+            {% csrf_token %}
+            {{ form }}
+        </form>
+    </body>

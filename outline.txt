@@ -19,3 +19,26 @@ Overall, I see this project taking the following arc over the next 10 hours:
 
 
 This took 10 minutes to write up, I'll start on the project tomorrow and work via Pomodoro timing.
+
+Nov 21st
+preliminary research led me to this article: https://realpython.com/location-based-app-with-geodjango-tutorial/#creating-a-django-model
+PointField seems to be what I'm looking for, so I'll use this article to guide me towards getting off the ground with this app
+
+Pomodoro 1: laying the groundwork
+- had to install gdal, python3-gdal to my system
+
+Running a containerized database with podman
+> podman run --name=postgis -d -e POSTGRES_USER=user001 -e POSTGRES_PASS=123456789 -e POSTGRES_DBNAME=gis -p 5432:5432 kartoza/postgis:9.6-2.4
+
+Pomo 2: building the "app" module
+- I'm assuming that feed will be measured in grams
+- admin username: freshworks, password: ducksauce
+
+- admin site set up, model migrated to db
+
+Pomo 3: setting up the view
+- using https://www.geeksforgeeks.org/django-modelform-create-form-from-models/ to build the modelform
+- barebones display functional - not sure how I'm gonna display location...
+
+Pomo 4: building a form view
+- note: generic formview doesn't seem to work well
