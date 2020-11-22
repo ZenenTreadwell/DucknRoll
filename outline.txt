@@ -42,3 +42,26 @@ Pomo 3: setting up the view
 
 Pomo 4: building a form view
 - note: generic formview doesn't seem to work well
+
+
+Nov 22nd
+Okay, taking stock of yesterday's work. I'm working on steps 1 and 2 at the same time, and once I can configure submitting data i should be able to
+mark those off of my list. In order to do that, I think I need to start building the API to receive POST requests.
+
+Pomo 1:
+- following the DRF tutorial didn't work, gonna default to my working implementation
+
+Pomo 2:
+- api success! now to submit to it with a formview
+- form validation is causing some trouble
+- the form works in a very basic way, but I think that I would be better off writing the rest in React
+
+Pomo 3:
+-integrating api request into react
+-I think that I want to design this page so that adding a new entry comes up as a modal component on top of a list
+
+I stopped pomodoroing
+
+- gotta update the database to use geographical points rather than geometrical ones (turned out to be super trivial)
+
+I finished up the front page of the react app. I lost track of time but I'm going to say I spent max 4 hours working this morning

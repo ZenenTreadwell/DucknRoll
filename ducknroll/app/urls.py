@@ -14,10 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import include, path
-from .views import HomeView, EntryView
+from .views import HomeView, EntryView, API, EntryView2
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register(r'', API, "DucknRoll API")
 
 urlpatterns = [
-    path('', HomeView.as_view(), name='home'),
-    path('add/', EntryView.as_view(), name='entry'),
-
+    path('', HomeView.as_view(), name="home"),
+    path('add/', EntryView.as_view(), name="add a new entry"),
+    path('new/', EntryView2.as_view(), name="add a new entry"),
+    path('api/', include(router.urls)),
 ]
