@@ -61,7 +61,31 @@ Pomo 3:
 -I think that I want to design this page so that adding a new entry comes up as a modal component on top of a list
 
 I stopped pomodoroing
-
 - gotta update the database to use geographical points rather than geometrical ones (turned out to be super trivial)
+- note: use react-leaflet for the modal component
 
 I finished up the front page of the react app. I lost track of time but I'm going to say I spent max 4 hours working this morning
+
+Nov 22nd - evening
+I really want to have this project mostly done for Monday so that I can spend tomorrow morning putting on the finishing touches and documenting it.
+The only major thing left to do is to create the modal component and stylise the page.
+
+Pomo 1: react submission
+- having trouble with modal components
+
+Pomo 2:
+- note: not using propTypes in this project
+- functional components and state hooks seem to be the "better" way to make this work, but I would rather just hack together a working demo
+
+Pomo 3:
+- slow progress, working on saving form data to the component's state (this seems smelly but.. #hacking)
+- alright, time to integrate the leaflet map!
+- it needs to be a functional component - i'll separate it
+
+Pomo 5:
+- getting into it now, formatting data for API posting
+- Ahh! the Geodjango backend isn't recognizing my string input
+- IT WORKED
+
+...losing track of time
+I have full functionality now, but I think it's been almost 10 hours total at this point. I'm gonna document my work and push it.

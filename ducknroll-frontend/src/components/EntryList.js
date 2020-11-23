@@ -27,7 +27,7 @@ function EntryList(props) {
     }
 
     return (
-        <Table>
+        <Table striped>
         <thead>
         <tr>
         <th>Entry #</th>
